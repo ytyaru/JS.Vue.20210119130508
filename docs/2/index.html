@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>Vue.jsを使う。</title>
+    <script src="./vue.2.6.12.min.js"></script>
+    <script src="./main.js"></script>
+</head>
+<body>
+<h1><a href="https://github.com/ytyaru/JS.Vue.20210119130508">Vue.jsを使う。</a></h1>
+<div id="app">
+    <p v-if="seen">表示のON/OFFが切り替わります。<a href="https://jp.vuejs.org/v2/guide/index.html#%E6%9D%A1%E4%BB%B6%E5%88%86%E5%B2%90%E3%81%A8%E3%83%AB%E3%83%BC%E3%83%97"><code>v-if</code></a>ディレクティブを使用しました。</p>
+</div>
+<ol>
+    <li>ブラウザのデベロッパツールを開く（Ctrl+Shift+I）</li>
+    <li>Consoleタブを開く</li>
+    <li><code>app.seen = false</code>と入力する</li>
+    <li><code>表示のON/OFFが切り替わります。</code>という表示が非表示になる</li>
+    <li><code>app.seen = true</code>と入力する</li>
+    <li><code>表示のON/OFFが切り替わります。</code>という表示が出る</li>
+</ol>
+</body>
+</html>
