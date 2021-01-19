@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>Vue.jsを使う。</title>
+    <script src="./vue.2.6.12.min.js"></script>
+    <script src="./main.js"></script>
+</head>
+<body>
+<h1><a href="https://github.com/ytyaru/JS.Vue.20210119130508">Vue.jsを使う。</a></h1>
+<div id="app">
+    <ol>
+        <li v-for="todo in todos">{{ todo.text }}</li>
+    </ol>
+</div>
+<p>　繰り返す。<a href="https://jp.vuejs.org/v2/guide/index.html#%E6%9D%A1%E4%BB%B6%E5%88%86%E5%B2%90%E3%81%A8%E3%83%AB%E3%83%BC%E3%83%97"><code>v-for</code></a>ディレクティブを使用しました。<a href="https://jp.vuejs.org/v2/guide/list.html">こちら</a>が詳しい。</p>
+<ol>
+    <li>ブラウザのデベロッパツールを開く（Ctrl+Shift+I）</li>
+    <li>Consoleタブを開く</li>
+    <li><code>app.todos.push({ text: 'New item' })</code>と入力する</li>
+    <li><code>New item</code>がリストに追加される</li>
+</ol>
+</body>
+</html>
